@@ -1,0 +1,14 @@
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\bin\Debug\CodeWebifier.exe.config
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\bin\Debug\CodeWebifier.exe
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\bin\Debug\CodeWebifier.pdb
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\MainWindow.g.cs
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\App.g.cs
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier_MarkupCompile.cache
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier_MarkupCompile.lref
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\MainWindow.baml
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.g.resources
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.Properties.Resources.resources
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.csproj.GenerateResource.Cache
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.csproj.CoreCompileInputs.cache
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.exe
+C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.pdb

@@ -1,0 +1,40 @@
+﻿<Window x:Class="CodeWebifier.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CodeWebifier"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="525" SizeChanged="Window_SizeChanged">
+    <Grid Background="#ddc">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="10"></RowDefinition>
+      <RowDefinition Height="30"></RowDefinition>
+      <RowDefinition Height="10"></RowDefinition>
+      <RowDefinition Height="30"></RowDefinition>
+      <RowDefinition Height="30"></RowDefinition>
+      <RowDefinition Height="10"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+      <RowDefinition Height="30"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="30"></ColumnDefinition>
+      <ColumnDefinition Width="*"></ColumnDefinition>
+      <ColumnDefinition Width="30"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <Label Grid.Row="1" Grid.Column="1" FontFamily="Tahoma" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" Background="#eed" Width="200">
+      Code Webifier
+    </Label>
+    <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+      <TextBox Name="FileNameTextBox" MinWidth="250" Height="20">File Specification</TextBox>
+    </StackPanel>
+    <StackPanel Grid.Row="4" Grid.Column="1" Height="20" Orientation="Horizontal" HorizontalAlignment="Right">
+      <Button Name="BrowseButton" Height="20" Width="60" Click="BrowseButton_Click">Browse</Button>
+      <Label Width="20"></Label>
+      <Button Name="WebifyButton" Height="20" Width="70" Click="WebifyButton_Click">Webify</Button>
+    </StackPanel>
+    <Border Grid.Row="6" Grid.Column="1" BorderThickness="1" BorderBrush="DarkSlateGray">
+      <TextBlock Name="FileTextBlock" Grid.Row="5" Grid.Column="1" Padding="10" Background="White" FontFamily="consolas">File contents here</TextBlock>
+    </Border>
+    </Grid>
+</Window>
