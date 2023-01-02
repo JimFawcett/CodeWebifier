@@ -13,7 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+#pragma warning disable CS0105 // The using directive for 'System.Text' appeared previously in this namespace
 using System.Text;
+#pragma warning restore CS0105 // The using directive for 'System.Text' appeared previously in this namespace
 using Microsoft.Win32;
 
 namespace CodeWebifier
@@ -62,8 +64,8 @@ namespace CodeWebifier
       StringBuilder webified = new StringBuilder();
       int size = fileText.Length;
 
-      Console.Write("\n<div class='code'>");
-      Console.Write("\n<pre>\n");
+      Console.Write("\n<div class='code'>\\n\\");
+      Console.Write("\n<pre>\\n\\\n");
 
       for (int i=0; i<size; ++i)
       {
@@ -76,12 +78,23 @@ namespace CodeWebifier
           case '>':
             Console.Write("&gt;");
             break;
+          case '\\':
+            Console.Write("&#92;");
+            break;
+          case '"':
+            Console.Write("&quot;");
+            break;
+          case '\r':
+            break;
+          case '\n':
+            Console.Write("\\n\\\n");
+            break;
           default:
             Console.Write(ch);
             break;
         }
       }
-      Console.Write("\n</pre>");
+      Console.Write("</pre>\\n\\");
       Console.Write("\n</div>");
     }
 
