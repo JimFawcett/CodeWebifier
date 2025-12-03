@@ -13,6 +13,8 @@
 
 The primary function is to **write this formatted HTML output directly to the console**, allowing users to easily copy the fragment and paste it into their own web documentation, technical blogs, or project websites. This is a quick and effective way to ensure code snippets are displayed correctly and with appropriate syntax highlighting on the web.
 
+<img src="https://github.com/JimFawcett/NewSite/tree/main/pictures/CodeWebifier.png" size="500">
+
 ## ✨ Features
 
 * **Source Code to HTML Conversion:** Converts the contents of a specified source code file into a self-contained HTML block.
