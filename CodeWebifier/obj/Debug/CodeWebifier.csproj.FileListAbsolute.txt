@@ -12,3 +12,17 @@ C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.csproj.G
 C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.csproj.CoreCompileInputs.cache
 C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.exe
 C:\su\Repository\Tools\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.pdb
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\bin\Debug\CodeWebifier.exe.config
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\bin\Debug\CodeWebifier.exe
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\bin\Debug\CodeWebifier.pdb
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.csproj.AssemblyReference.cache
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\MainWindow.g.cs
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\App.g.cs
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier_MarkupCompile.cache
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\MainWindow.baml
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.g.resources
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.Properties.Resources.resources
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.csproj.GenerateResource.cache
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.csproj.CoreCompileInputs.cache
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.exe
+C:\github\JimFawcett\CodeWebifier\CodeWebifier\obj\Debug\CodeWebifier.pdb

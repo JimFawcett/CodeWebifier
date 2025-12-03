@@ -45,7 +45,7 @@ namespace CodeWebifier
     {
       OpenFileDialog dlg = new OpenFileDialog();
       dlg.InitialDirectory = startDir;
-      if(dlg.ShowDialog() == true)
+      if (dlg.ShowDialog() == true)
       {
         fileText = File.ReadAllText(dlg.FileName);
         FileTextBlock.Text = fileText;
@@ -58,19 +58,44 @@ namespace CodeWebifier
       }
     }
 
+    // Older-C# friendly: no index-from-end operator
+    private static int GetTotalLines(string text)
+    {
+      if (string.IsNullOrEmpty(text)) return 0;
+
+      int nl = 0;
+      for (int i = 0; i < text.Length; ++i)
+        if (text[i] == '\n') nl++;
+
+      bool endsWithNewline = text.Length > 0 && text[text.Length - 1] == '\n';
+      return nl + (endsWithNewline ? 0 : 1);
+    }
+
     private void WebifyButton_Click(object sender, RoutedEventArgs e)
     {
       WebifyButton.IsEnabled = false;
       StringBuilder webified = new StringBuilder();
       int size = fileText.Length;
 
-      Console.Write("\n<div class='code'>\\n\\");
-      Console.Write("\n<pre>\\n\\\n");
+      bool showLineNumbers = (LineNumbersCheckBox != null && LineNumbersCheckBox.IsChecked == true);
+      int totalLines = GetTotalLines(fileText);
+      int lineFieldWidth = Math.Max(1, totalLines.ToString().Length);
 
-      for (int i=0; i<size; ++i)
+      Console.Write("\n<div class='code'>");
+      Console.Write("\n<pre>\n");
+
+      int lineIndex = 1;
+
+      if (showLineNumbers && totalLines > 0)
+      {
+        Console.Write(lineIndex.ToString().PadLeft(lineFieldWidth));
+        Console.Write(" ");
+      }
+
+      for (int i = 0; i < size; ++i)
       {
         char ch = fileText[i];
-        switch(ch)
+        switch (ch)
         {
           case '<':
             Console.Write("&lt;");
@@ -87,14 +112,19 @@ namespace CodeWebifier
           case '\r':
             break;
           case '\n':
-            Console.Write("\\n\\\n");
+            Console.Write("\n");
+            if (showLineNumbers && ++lineIndex <= totalLines)
+            {
+              Console.Write(lineIndex.ToString().PadLeft(lineFieldWidth));
+              Console.Write(" ");
+            }
             break;
           default:
             Console.Write(ch);
             break;
         }
       }
-      Console.Write("</pre>\\n\\");
+      Console.Write("\n</pre>");
       Console.Write("\n</div>");
     }
 
