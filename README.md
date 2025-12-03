@@ -47,13 +47,11 @@ This project is a C# console application and can be built and run using Visual S
 
 ## 💻 Usage
 
-The application is typically run from the command line and requires the path to the source code file you wish to "webify."
+The GUI application is typically run from the command line and requires the path to the source code file you wish to "webify."
 
 Assuming you have built the executable, here is the general usage pattern:
 
 ```bash
 # General syntax
-CodeWebifier.exe <path_to_source_file>
+CodeWebifier.exe > browse to path_to_source file
 
-# Example
-CodeWebifier.exe C:\Projects\MyRepo\src\Program.cs
