@@ -1,6 +1,3 @@
-This is a template for the `README.md` file for the `JimFawcett/CodeWebifier` repository.
-
-````markdown
 # CodeWebifier
 
 **Convert source code files into stylized HTML fragments suitable for web pages or blogs.**
@@ -58,28 +55,3 @@ CodeWebifier.exe <path_to_source_file>
 
 # Example
 CodeWebifier.exe C:\Projects\MyRepo\src\Program.cs
-````
-
-### Output Flow
-
-1.  You run `CodeWebifier.exe` with your file path.
-2.  The program reads the code, processes it (likely adding `<span>` or other tags for styling), and wraps it in a block element (like `<pre>`).
-3.  The complete, formatted HTML fragment is printed to your console window.
-4.  You copy the entire output and paste it into the HTML source of your desired web page.
-
------
-
-## 📄 License & Author
-
-  * **Author:** [Jim Fawcett](https://github.com/JimFawcett)
-  * Please check the repository files for a specific LICENSE file for detailed terms.
-
------
-
-## 🔗 Live Demo / Project Page
-
-Check out the project's dedicated page for more details and a potential demonstration:
-[JimFawcett.github.io/CodeWebifier](https://JimFawcett.github.io/CodeWebifier)
-
-```
-```
