@@ -13,7 +13,7 @@
 
 The primary function is to **write this formatted HTML output directly to the console**, allowing users to easily copy the fragment and paste it into their own web documentation, technical blogs, or project websites. This is a quick and effective way to ensure code snippets are displayed correctly and with appropriate syntax highlighting on the web.
 
-<img src="https://raw.githubusercontent.com/JimFawcett/NewSite/tree/main/pictures/CodeWebifier.png" alt="App Screenshot" width="500"/>
+<img src="https://raw.githubusercontent.com/JimFawcett/NewSite/tree/main/pictures/CodeWebifier.png" width="500"/>
 
 ## ✨ Features
 
